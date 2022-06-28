@@ -1,0 +1,50 @@
+h1 {
+  font-family: "SF Pro Display";
+  font-weight: 800
+}
+.python {
+  font-family: "Cascadia Code";
+  font-size: 20px;
+}
+#text2 {
+  border-color: rgb(32, 107, 145);
+  border-radius: 10%;
+}
+::-webkit-scrollbar {
+  width: 16px;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-button:single-button {
+  display: block;
+}
+/* Up */
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+  background: url('combo/up_arrow.bmp');
+}
+::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+  background: url('combo/up_arrow_hover.bmp');
+}
+
+/* Down */
+::-webkit-scrollbar-button:single-button:vertical:increment {
+  background: url('combo/down_arrow.bmp');
+}
+::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+  background: url('combo/down_arrow_hover.bmp');
+}
+
+::-webkit-scrollbar-track {
+  --r: 197;
+  --g: 253;
+  --b: 230;
+  background: rgb(var(--r), var(--g), var(--b));
+}
+::-webkit-scrollbar-thumb {
+  background: url('combo/scrollbar.bmp');
+}
+::-webkit-scrollbar-thumb:hover {
+  background: url('combo/scrollbar_hover.png');
+}
+::-webkit-scrollbar-thumb:active {
+  background: url('combo/scrollbar_active.bmp');
+}
