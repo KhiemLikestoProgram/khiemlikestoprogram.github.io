@@ -1,6 +1,9 @@
 h1 {
+    font-family: "SF Pro Display";
+    font-weight: 800
+}
+.sandbox {
   font-family: "SF Pro Display";
-  font-weight: 800
 }
 .python {
   font-family: "Cascadia Code";
@@ -41,10 +44,16 @@ h1 {
 }
 ::-webkit-scrollbar-thumb {
   background: url('combo/scrollbar.bmp');
+  border-radius: 15%;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: url('combo/scrollbar_hover.png');
 }
 ::-webkit-scrollbar-thumb:active {
   background: url('combo/scrollbar_active.bmp');
+}
+
+apple { /* This is not good for your code, don't do this!*/
+  font-family: "SF Pro Display";
+  font-size: 20px;
 }
