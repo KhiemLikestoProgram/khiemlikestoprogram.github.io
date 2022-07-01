@@ -1,0 +1,147 @@
+body {
+  text-align: left;
+}
+.change {
+  cursor: pointer;
+  border: 1px solid #555;
+  border-radius: 40%;
+  width: 20px;
+  text-align: center;
+  padding: 5px;
+  margin-left: 8px;
+}
+.dark {
+  background-color: #000000;
+  color: #ffeacf;
+}
+h1 {
+    font-family: "SF Pro Display";
+    font-weight: 800;
+    margin: 10px;
+}
+.sandbox {
+  font-family: "SF Pro Display";
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 20px;
+  border-color: #000000;
+  padding: 10px;
+  margin: 10px;
+}
+.python {
+  font-family: "Cascadia Code";
+  font-size: 20px;
+}
+.animation p {
+  font-size: 20px;
+}
+.animation {
+  border-radius: 20px;
+  border-style: double;
+  padding: 1rem;
+}
+.circle {
+  border: 16px solid #221616; /* Light grey */
+  border-top: 16px solid #3734db; /* Blue */
+  border-radius: 1000px;
+  width: 120px;
+  height: 120px;
+  animation: spin 0.8s linear infinite;
+}
+.circle:hover {
+  color: #3734db;
+  border: 16px solid #f5e3cc;
+  border-top: 16px solid currentColor;
+  cursor: pointer;
+  animation: changecolor 0.8s linear infinite;
+}
+#info {
+  display: inline-block;
+  color: #361f01;
+  font-size: 20px;
+  padding: 2px;
+}
+#info:hover {
+  color: #834f0be5;
+  cursor: pointer;
+}
+body.dark #info {
+  display: inline-block;
+  color: #fae3c6;
+  font-size: 20px;
+  padding: 2px;
+}
+body.dark #info:hover {
+  color: #ffc880e5;
+  cursor: pointer;
+}
+@keyframes spin {
+  50% {
+    transform: rotate(180deg);
+    border-top: 16px solid #91fa61;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-top: 16px solid #db3434;
+  }
+}
+@keyframes changecolor {
+  0% {
+    border: 16px solid #a8865a;
+  }
+  33% {
+    border: 16px solid #bdddc4;
+  }
+  66% {
+    border: 16px solid #483c8d;
+  }
+}
+#text1 {
+  border-radius: 10px;
+  margin: 15px;
+  font-size: 20px
+}
+::-webkit-scrollbar {
+  width: 16px;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-button:single-button {
+  display: block;
+}
+/* Up */
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+  background: url('combo/up_arrow.bmp');
+}
+::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+  background: url('combo/up_arrow_hover.bmp');
+}
+
+/* Down */
+::-webkit-scrollbar-button:single-button:vertical:increment {
+  background: url('combo/down_arrow.bmp');
+}
+::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+  background: url('combo/down_arrow_hover.bmp');
+}
+
+::-webkit-scrollbar-track {
+  --r: 197;
+  --g: 253;
+  --b: 230;
+  background: rgb(var(--r), var(--g), var(--b));
+}
+::-webkit-scrollbar-thumb {
+  background: url('combo/scrollbar.bmp');
+  border-radius: 15px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: url('combo/scrollbar_hover.png');
+}
+::-webkit-scrollbar-thumb:active {
+  background: url('combo/scrollbar_active.bmp');
+}
+
+apple { /* This is not good for your code, don't do this!*/
+  font-family: "SF Pro Display";
+  font-size: 20px;
+}
